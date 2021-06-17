@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>President's Timeline</title>
+    <link rel="stylesheet" href="timeline.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/color/jquery.color-2.2.0.js" integrity="sha256-gvMJWDHjgDrVSiN6eBI9h7dRfQmsTTsGU/eTT8vpzNg=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(
+            function() {
+                $("body").mouseenter(function() {
+                    $("li:nth-child(even)").animate({
+                        opacity: '100%',
+                    }, 1000);
+                    $("li:nth-child(even)").animate({
+                        marginLeft: '0px',
+                    }, 1000);
+
+                });
+                $("body").mouseenter(function() {
+                    $("li:nth-child(odd)").animate({
+                        opacity: '100%'
+                    }, 1000);
+                    $("li:nth-child(odd)").animate({
+                        marginRight: '0px',
+                    }, 1500);
+
+                });
+                $("body").mouseenter(function() {
+                    $("img").delay(3500).animate({
+                        marginTop: '-50px'
+                    }, 1000);
+                    $("img").animate({
+                        height: '100px',
+                        width: '100px'
+                    }, 1000);
+                });
+
+                $("body").mouseenter(function() {
+                    $(".r1").delay(3500).fadeIn(2000);
+
+                });
+            })
+    </script>
+</head>
+
+<body>
+    <div class="timeline">
+        <ul>
+            <li>
+                <div class="cell1">
+                    <div class="img"> <img src="scribble.png"></div>
+                    <div class="r1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate deserunt mollitia quia. Deserunt deleniti, iusto, temporibus iste sunt a veritatis incidunt ad, fugit ullam consectetur quia corporis impedit dicta!
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cell1">
+                    <div class="r1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate deserunt mollitia quia. Deserunt deleniti, iusto, temporibus iste sunt a veritatis incidunt ad, fugit ullam consectetur quia corporis impedit dicta!
+                    </div>
+                    <div class="img"> <img src="scribble.png"></div>
+
+                </div>
+            </li>
+            <li>
+                <div class="cell1">
+                    <div class="img"> <img src="scribble.png"></div>
+                    <div class="r1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate deserunt mollitia quia. Deserunt deleniti, iusto, temporibus iste sunt a veritatis incidunt ad, fugit ullam consectetur quia corporis impedit dicta!
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cell1">
+                    <div class="r1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate deserunt mollitia quia. Deserunt deleniti, iusto, temporibus iste sunt a veritatis incidunt ad, fugit ullam consectetur quia corporis impedit dicta!
+                    </div>
+                    <div class="img"> <img src="scribble.png"></div>
+                </div>
+            </li>
+            <li>
+                <div class="cell1">
+                    <div class="img"> <img src="scribble.png"></div>
+                    <div class="r1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate deserunt mollitia quia. Deserunt deleniti, iusto, temporibus iste sunt a veritatis incidunt ad, fugit ullam consectetur quia corporis impedit dicta!
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cell1">
+                    <div class="r1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate deserunt mollitia quia. Deserunt deleniti, iusto, temporibus iste sunt a veritatis incidunt ad, fugit ullam consectetur quia corporis impedit dicta!
+                    </div>
+                    <div class="img"> <img src="scribble.png"></div>
+                </div>
+            </li>
+            <li>
+                <div class="cell1">
+                    <div class="img"> <img src="scribble.png"></div>
+                    <div class="r1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate deserunt mollitia quia. Deserunt deleniti, iusto, temporibus iste sunt a veritatis incidunt ad, fugit ullam consectetur quia corporis impedit dicta!
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cell2 ">
+                    <div class="r1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate deserunt mollitia quia. Deserunt deleniti, iusto, temporibus iste sunt a veritatis incidunt ad, fugit ullam consectetur quia corporis impedit dicta!
+                    </div>
+                    <div class="img"> <img src="scribble.png"></div>
+                </div>
+            </li>
+            <li>
+                <div class="cell2 ">
+                    <div class="img"> <img src="scribble.png"></div>
+                    <div class="r1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate deserunt mollitia quia. Deserunt deleniti, iusto, temporibus iste sunt a veritatis incidunt ad, fugit ullam consectetur quia corporis impedit dicta!
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cell2 ">
+                    <div class="r1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate deserunt mollitia quia. Deserunt deleniti, iusto, temporibus iste sunt a veritatis incidunt ad, fugit ullam consectetur quia corporis impedit dicta!
+                    </div>
+                    <div class="img"> <img src="scribble.png"></div>
+                </div>
+            </li>
+            <li>
+                <div class="cell2 ">
+                    <div class="img"> <img src="scribble.png"></div>
+                    <div class="r1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate deserunt mollitia quia. Deserunt deleniti, iusto, temporibus iste sunt a veritatis incidunt ad, fugit ullam consectetur quia corporis impedit dicta!
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cell2 ">
+                    <div class="r1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate deserunt mollitia quia. Deserunt deleniti, iusto, temporibus iste sunt a veritatis incidunt ad, fugit ullam consectetur quia corporis impedit dicta!
+                    </div>
+                    <div class="img"> <img src="scribble.png"></div>
+                </div>
+            </li>
+            <li>
+                <div class="cell2 ">
+                    <div class="img"> <img src="scribble.png"></div>
+                    <div class="r1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate deserunt mollitia quia. Deserunt deleniti, iusto, temporibus iste sunt a veritatis incidunt ad, fugit ullam consectetur quia corporis impedit dicta!
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cell2 ">
+                    <div class="r1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate deserunt mollitia quia. Deserunt deleniti, iusto, temporibus iste sunt a veritatis incidunt ad, fugit ullam consectetur quia corporis impedit dicta!
+                    </div>
+                    <div class="img"> <img src="scribble.png"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <br></div>
+</body>
+
+</html>

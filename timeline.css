@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.timeline {
+    width: 1000px;
+    position: relative;
+    margin: 4px auto;
+    padding: 40px 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 5000px;
+    background-color: black;
+}
+
+.timeline ul {
+    margin: 0;
+    padding: 0;
+}
+
+.timeline ul li {
+    line-height: 30px;
+    position: relative;
+    width: 50%;
+    padding: 30px 40px;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(even) {
+    float: left;
+    clear: both;
+    text-align: right;
+    margin-left: -280px;
+    opacity: 0%;
+}
+
+.timeline ul li:nth-child(odd) {
+    float: right;
+    clear: both;
+    text-align: left;
+    margin-right: -280px;
+    opacity: 0%;
+}
+
+.timeline ul li:nth-child(even):before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: teal;
+    border-radius: 16px;
+    box-shadow: 0 0 0 3px rgb(156, 230, 230);
+    top: 30px;
+    right: -11px;
+}
+
+.timeline ul li:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: teal;
+    border-radius: 16px;
+    box-shadow: 0 0 0 3px rgb(156, 230, 230);
+    top: 30px;
+    left: -9px;
+}
+
+.cell1 {
+    background-color: rgb(230, 160, 80);
+    border: 10px solid darkblue;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+}
+
+.cell2 {
+    background-color: rgb(230, 160, 80);
+    border: 10px solid darkblue;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    margin-top: 40px;
+    border: 2px black solid;
+}
+
+.r1 {
+    display: none;
+    padding: 10px;
+}
